@@ -310,9 +310,18 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.backdrop .modal {
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .is-hidden {
     opacity: 0;
     pointer-events: none;
+}
+
+.is-hidden .modal {
+    transform: scale(0) translate(-50%, -50%);
 }
 
 .modal {
@@ -322,6 +331,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
 
     background-color: var(--primary-white-color);
     border-radius: 4px;
@@ -350,4 +360,72 @@
     cursor: pointer;
     background-color: var(--accent-color);
     fill: var(--primary-white-color);
+}
+
+.modal-header {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+
+    margin-bottom: 30px;
+}
+
+.form-section {
+    margin: 0;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-section label {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    margin-bottom: 4px;
+}
+
+.form-section input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    padding: 12px 16px;
+}
+
+.form-section textarea {
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+}
+
+.form-section textarea::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    color: var(--text-color);
+}
+
+.modal > .color {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
 }

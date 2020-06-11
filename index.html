@@ -382,17 +382,43 @@
               </li>
             </ul>
           </div>
+          <div class="form-footer">
+            <form class="subscribe js-subscribe-form">
+              <div class="footer-flex-form">
+                <label for="mail">Подпишитесь на рассылку</label>
+                <input type="email" name="mail" id="mail" placeholder="E-mail" />
+              </div>
+              <button class="subscribe-footer" type="submit">Подписаться
+              </button>
+            </form>
+          </div>
         </div>
         <p class="copirait">2020 &verbar; Developed by GoIT Students</p>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque ut esse amet error, iste non dolorem aut culpa mollitia temporibus veritatis suscipit, magni, laboriosam quos soluta. Molestiae odit neque inventore!</p>
+      <form class="modal js-speaker-form">
+        <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
+        <div class="form-section">
+          <label for="name">Имя</label>
+          <input id="name" type="text" name="name" autofocus></input>
+        </div>
+        <div class="form-section">
+          <label for="tel">Телефон</label>
+          <input id="tel" type="tel" name="tel"></input>
+        </div>
+        <div class="form-section">
+          <label for="mail">Почта</label>
+          <input id="mail" type="email" name="mail"></input>
+        </div>
+        <div class="form-section">
+          <textarea id="coment" class="coment" name="coment" placeholder="Комментарий"></textarea>
+        </div>
+        <button class="link buttom color" type="submit">Отправить</button>
         <button class="close-modal" type="button" data-modal-close>
           <svg width="11" height="11"><use href="./images/sprite.svg#close"></use></svg>
         </button>
-      </div>
+      </form>
     </div>
     <script src="./js/modal.js"></script>
   </body>
