@@ -400,19 +400,39 @@
       <form class="modal js-speaker-form">
         <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
         <div class="form-section">
-          <label for="name">Имя</label>
-          <input id="name" type="text" name="name" autofocus></input>
+          <input class="form-input" id="name" type="text" name="name" placeholder=" " autofocus></input>
+          <label class="label" for="name">Имя</label>
+          <span class="icon-form">
+            <svg width="18" height="18">
+              <use href="./images/sprite.svg#person-form"></use>
+            </svg>
+          </span>
         </div>
         <div class="form-section">
-          <label for="tel">Телефон</label>
-          <input id="tel" type="tel" name="tel"></input>
+          <input class="form-input" id="tel" type="tel" name="tel" placeholder=" "></input>
+          <label class="label" for="tel">Телефон</label>
+          <span class="icon-form">
+            <svg width="18" height="18">
+              <use class="icon-form-svg" href="./images/sprite.svg#phone-form"></use>
+            </svg>
+          </span>
         </div>
         <div class="form-section">
-          <label for="mail">Почта</label>
-          <input id="mail" type="email" name="mail"></input>
+          <input class="form-input" id="mail" type="email" name="mail" placeholder=" "></input>
+          <label class="label" for="mail">Почта</label>
+          <span class="icon-form">
+            <svg width="18" height="18">
+              <use href="./images/sprite.svg#email-form"></use>
+            </svg>
+          </span>
         </div>
-        <div class="form-section">
+        <div class="form-section form-margin-bottom">
           <textarea id="coment" class="coment" name="coment" placeholder="Комментарий"></textarea>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox"/>
+          <span class="icon-checkbox"></span>
+          <label class="policy" for="checkbox">Соглашаюсь с рассылкой и принимаю <a class="policy-web" href="">Условия договора</a></label>
         </div>
         <button class="link buttom color" type="submit">Отправить</button>
         <button class="close-modal" type="button" data-modal-close>
