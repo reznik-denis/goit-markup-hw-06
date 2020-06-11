@@ -14,6 +14,7 @@
     --border-customers-color: #AFB1B8;
     --border-our-team-color: #EEEEEE;
     --accent-color-portfolio: rgba(33, 150, 243, 0.9);
+    --backdrop-color: rgba(0, 0, 0, 0.2);
 }
 
 body {

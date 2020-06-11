@@ -45,8 +45,21 @@
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto; 
+
+    font: inherit;
+    font-family: inherit;
     min-width: 200px;
     text-align: center;
+
+    border: none;
+    color: inherit;
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.buttom:hover, .buttom:focus {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .visually-hidden {
@@ -283,4 +296,21 @@
 .icon-customers {
     display: block;
     fill: currentColor;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    background-color: var(--backdrop-color);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
