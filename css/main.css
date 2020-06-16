@@ -360,6 +360,7 @@
     cursor: pointer;
     background-color: var(--accent-color);
     fill: var(--primary-white-color);
+    outline: none;
 }
 
 .modal-header {
