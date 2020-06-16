@@ -419,6 +419,28 @@
     line-height: 14px;
 }
 
+.form-section .label-coment {
+    top: 12px;
+    left: 16px;
+    transform: translateY(30%);
+}
+
+.form-coment:focus + .label {
+    transform: translateY(-35px);
+    color: var(--accent-color);
+
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.form-coment:not(:placeholder-shown) + .label {
+    transform: translateY(35px);
+    color: var(--accent-color);
+
+    font-size: 12px;
+    line-height: 14px;
+}
+
 .form-input:not(:placeholder-shown) ~ .icon-form {
     fill: var(--accent-color);
 }
@@ -547,4 +569,8 @@
     background-image: url('../images/icon-check.svg');
     background-size: contain;
     background-origin: border-box;
+}
+
+.form-coment {
+    padding: 12px 16px 12px 16px;
 }
