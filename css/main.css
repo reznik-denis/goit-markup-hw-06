@@ -519,9 +519,12 @@
 }
 
 .checkbox {
+    margin-bottom: 30px;
+}
+
+.policy {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
 }
 
 .icon-checkbox {
